@@ -27,6 +27,14 @@
       }
     });
   });
+  
+  MathJax.Hub.Register.StartupHook("End Jax",function () {
+    var BROWSER = MathJax.Hub.Browser;
+    var jax = "SVG";
+    if (BROWSER.isMSIE && BROWSER.hasMathPlayer) jax = "NativeMML";
+    return MathJax.Hub.setRenderer(jax);
+  });
+  
 </script>
 
 <script type="text/x-mathjax-config">

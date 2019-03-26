@@ -5,7 +5,7 @@
 {% block title %}{{ __('title.tag') }}: {{ page.tag }} | {{ title }}{% endblock %}
 
 {% block content %}
-
+  {{ list_posts({class:Algorithm, amount:10}) }}
   {#################}
   {### TAG BLOCK ###}
   {#################}

@@ -49,16 +49,16 @@
 }
 
 #QR > div:hover p {
-  animation: roll 0.1s infinite linear;
-  -webkit-animation: roll 0.1s infinite linear;
-  -moz-animation: roll 0.1s infinite linear;
+  animation: roll 0.5s linear;
+  -webkit-animation: roll 0.5s linear;
+  -moz-animation: roll 0.5s linear;
 }
 
 @keyframes roll {
   from {
-    transform(rotateZ(30deg));
+    transform(rotateZ(-359deg));
   }
   to {
-    transform(rotateZ(-30deg));
+    transform(rotateZ(1deg));
   }
 }
